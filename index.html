@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочный магазин "Флора"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/logo.png" alt="Логотип цветочного магазина" class="logo">
+            <h1>Цветочный магазин "Флора"</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Букеты</a></li>
+            <li><a href="#">Комнатные растения</a></li>
+            <li><a href="#">Подарки</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    
+    <article>
+        <h2>Наши популярные букеты</h2>
+        
+        <div class="controls">
+            <label for="bgColor">Цвет фона:</label>
+            <select id="bgColor">
+                <option value="#faf1e6">Кремовый</option>
+                <option value="#f8e8e8">Розовый</option>
+                <option value="#e8f8f3">Мятный</option>
+                <option value="#e8f1f8">Голубой</option>
+                <option value="#f5e8f8">Лавандовый</option>
+            </select>
+            
+            <label for="textColor">Цвет текста:</label>
+            <select id="textColor">
+                <option value="#5e5343">Коричневый</option>
+                <option value="#8b4513">Шоколадный</option>
+                <option value="#556b2f">Оливковый</option>
+                <option value="#4682b4">Стальной синий</option>
+                <option value="#9370db">Пурпурный</option>
+            </select>
+            
+            <label for="fontSize">Размер шрифта:</label>
+            <select id="fontSize">
+                <option value="14px">Маленький</option>
+                <option value="16px" selected>Средний</option>
+                <option value="18px">Большой</option>
+                <option value="20px">Очень большой</option>
+            </select>
+            
+            <button id="applyBtn">Применить стили</button>
+        </div>
+        
+        <div class="flower-gallery">
+            <div class="flower-item">
+                <img src="img/rose.webp" alt="Букет роз">
+                <h3>Розовая нежность</h3>
+                <p>Букет из 25 розовых роз</p>
+                <p class="price">3 500 руб.</p>
+            </div>
+            
+            <div class="flower-item">
+                <img src="img/tulips.webp" alt="Букет тюльпанов">
+                <h3>Весеннее настроение</h3>
+                <p>Букет из 15 тюльпанов</p>
+                <p class="price">2 200 руб.</p>
+            </div>
+            
+            <div class="flower-item">
+                <img src="img/pion.jpg" alt="Свадебный букет">
+                <h3>Свадебный букет</h3>
+                <p>Композиция из белых пионов и эвкалипта</p>
+                <p class="price">4 800 руб.</p>
+            </div>
+        </div>
+        
+        <table id="contentTable">
+            <tr>
+                <td>Розы - свежие голландские розы 50 см</td>
+            </tr>
+            <tr>
+                <td>Тюльпаны - 10 сортов различных оттенков</td>
+            </tr>
+            <tr>
+                <td>Пионы - сезонное предложение с мая по июль</td>
+            </tr>
+            <tr>
+                <td>Хризантемы - долго сохраняют свежесть</td>
+            </tr>
+        </table>
+        
+        <div id="output"></div>
+    </article>
+    
+    <section class="about">
+        <h3>О нашем магазине</h3>
+        <img src="img/inside.jpg" alt="Интерьер магазина" class="shop-interior">
+        <p>Мы работаем с 2010 года и предлагаем только свежие цветы от проверенных поставщиков. Наши флористы создадут уникальные композиции для любого события.</p>
+    </section>
+    
+    <aside class="special-offer">
+        <h3>Специальное предложение</h3>
+        <img src="img/sale.png" alt="Специальное предложение">
+        <p>При заказе от 5000 руб. - доставка бесплатно!</p>
+        <p>Скидка 15% на все комнатные растения в этом месяце.</p>
+    </aside>
+    
+    <footer>
+        <p>© 2023 Цветочный магазин "Флора"</p>
+        <p>г. Москва, ул. Цветочная, 15</p>
+        <p>Телефон: +7 (495) 123-45-67</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
