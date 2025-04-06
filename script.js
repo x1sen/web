@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedTextColor = '#5e5343';
     let selectedFontSize = '16px';
     
-   
+  
     bgColorSelect.addEventListener('change', function() {
         selectedBgColor = this.value;
     });
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedFontSize = this.value;
     });
     
-    
+   
     const rows = table.getElementsByTagName('tr');
     for (let i = 0; i < rows.length; i++) {
         rows[i].addEventListener('mouseover', function() {
@@ -43,20 +43,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-   
+ 
     applyBtn.addEventListener('click', function() {
         for (let i = 0; i < rows.length; i++) {
             rows[i].style.color = selectedTextColor;
             rows[i].style.fontSize = selectedFontSize;
         }
         
-        
+  
         const flowerItems = document.querySelectorAll('.flower-item');
         flowerItems.forEach(item => {
             item.style.color = selectedTextColor;
             item.style.fontSize = selectedFontSize;
         });
     });
+    
     
     const flowerItems = document.querySelectorAll('.flower-item');
     flowerItems.forEach(item => {
