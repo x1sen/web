@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedTextColor = '#5e5343';
     let selectedFontSize = '16px';
     
-    // Обработчики для выпадающих списков
+   
     bgColorSelect.addEventListener('change', function() {
         selectedBgColor = this.value;
     });
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedFontSize = this.value;
     });
     
-    // Добавляем обработчики событий для строк таблицы
+    
     const rows = table.getElementsByTagName('tr');
     for (let i = 0; i < rows.length; i++) {
         rows[i].addEventListener('mouseover', function() {
@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Обработчик для кнопки применения стилей
+   
     applyBtn.addEventListener('click', function() {
         for (let i = 0; i < rows.length; i++) {
             rows[i].style.color = selectedTextColor;
             rows[i].style.fontSize = selectedFontSize;
         }
         
-        // Применяем стили ко всем карточкам цветов
+        
         const flowerItems = document.querySelectorAll('.flower-item');
         flowerItems.forEach(item => {
             item.style.color = selectedTextColor;
@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Анимация при наведении на карточки цветов
     const flowerItems = document.querySelectorAll('.flower-item');
     flowerItems.forEach(item => {
         item.addEventListener('mouseenter', function() {
